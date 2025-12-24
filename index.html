@@ -2,12 +2,206 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- SVG Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2'><rect x='3' y='3' width='18' height='18' rx='2' ry='2'/><line x1='8' y1='7' x2='16' y2='7'/><line x1='8' y1='11' x2='10' y2='11'/><line x1='8' y1='15' x2='10' y2='15'/><line x1='12' y1='11' x2='14' y2='11'/><line x1='12' y1='15' x2='14' y2='15'/><line x1='16' y1='11' x2='16' y2='17'/><circle cx='18' cy='18' r='1'/><circle cx='6' cy='18' r='1'/></svg>"
+    />
+
+    <!-- Fallback PNG Favicon (base64 encoded) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVR4nO2Wv0vDQBTHPwVXVyfBSVwcXBRcHBwKCh06dCg4uIg4dHAQBAcHQUHwH4jg4FDoKjgUQXATiuvzSS70mkt7vcsVH+zH+3F3l9wv74cjxpgDfANP0vgDfOGO8w9xEkpVgE/gBXjFXQrv+Cdp2BQScAXsZ7x3DhQFYr8AW2UC2ALeO8A4WJNQPgPYb2n8w3tXe8l0BoqYNgQ0A0gDRgNAiGQngAeY1wAQIjkAjJEG0BzpBri9wQcYpBgwRr8j0QYYLgngJfYBx3OAaBdPgd7YA0i+hxPAEBuN1VwC18A8oF4pI34mHHAE9AAFRakjTgBTgB6gQV0iTgBTgH5oUJu4pYuwowfYjgvw6gL+cgG6wJ4tUEfJdAFWgGUgASjci60ALaDJwRc3W4E1Dn+cnAA9QIu6AqwBLXoPUAP0Z7nRA3W4ANPAZJkCfW5QJ7IEkEXF5w3Gyo7Dx8A0IYBZ4BH4dIC+Sg8wA7wBX0IIlwfYBF4cIJ5yA5gE9AFVxAc4FCI5AeiDVFPCvXgA3OknM/pcIQ14DiGUA0yUcC8eANf6T4IT/RQir7EQ7AJn+jNF0fdbQ+8k3YD3nwL5BLAJPOg37gIrvk6vB/AH6Ossp8rUMyEAAAAASUVORK5CYII="
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABq0lEQVR4nO2WPUvDQBTH/4rgrq5OgpO4OLgouDg4FBS6dOhQcHARcejgIAgODoKCoD8QwcGh0FVwKILgJhTX55Pc5S69Xtrkkgv6hT9JLm/vfnkvueSMtUYBj4CDNM5ACXhQf8+AFwM2mUwYwC7wJgCfG/3Q6dEAKgoY7gHrFQE8BWB9E4BMJ30BOO4B0CP9JqBMjwKQaQRgvAOAx6Dbq9oCQ5nglQBsKgC0s6t5OZkH9J0mQJ2eTQDl2QG8sV6d2wC8k55XgL9+HgF9e1sB+LTB0ABoQjvSHQW8WwN8sNoE8G+DHsDfJgDtfHt+CWhHbl3dA7DHAfxvDzDpAeJ+14yPdV0mAZhUgE0pUy8B67EfsA8sK8CUL1ATaAbw7K1K2z2+oKf1JgA/Ktk8w6EAvAEoGOED7PcBj9ES/vVAXw+A/y4+AAvgGtgaW+CST4gVl0v5o0J8jQxwCSy4hK8r5NfIAPvlUr6c5fLq69f3GB8g/gJX9L5dSfiF0wAAAABJRU5ErkJggg=="
+    />
+
+    <!-- Viewport and Theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Modern Calculator - A sleek, responsive calculator app built with React, Vite, and Tailwind CSS. Perform calculations with memory functions, history tracking, and keyboard support."
+    />
+    <meta
+      name="keywords"
+      content="calculator, math, calculator app, online calculator, scientific calculator, react calculator, modern calculator, math tool"
+    />
+    <meta name="author" content="Modern Calculator" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags (for social media) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Modern Calculator | Professional Math Tool"
+    />
+    <meta
+      property="og:description"
+      content="A sleek, responsive calculator app with memory functions, calculation history, and keyboard support."
+    />
+    <meta
+      property="og:image"
+      content="https://calculator-app.com/og-image.png"
+    />
+    <meta property="og:url" content="https://calculator-app.com" />
+    <meta property="og:site_name" content="Modern Calculator" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Modern Calculator | Professional Math Tool"
+    />
+    <meta
+      name="twitter:description"
+      content="A sleek, responsive calculator app with memory functions, calculation history, and keyboard support."
+    />
+    <meta
+      name="twitter:image"
+      content="https://calculator-app.com/twitter-image.png"
+    />
+    <meta name="twitter:creator" content="@calculatorapp" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Modern Calculator" />
+
+    <!-- Windows Meta Tags -->
+    <meta name="msapplication-TileColor" content="#0a0a0a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+
+    <!-- Android Chrome Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://calculator-app.com" />
+
+    <!-- Page Title -->
+    <title>Modern Calculator | Professional Math Tool</title>
+
+    <!-- Inline CSS for initial loading -->
+    <style>
+      /* Initial loading styles */
+      body {
+        margin: 0;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a2e 50%,
+          #16213e 100%
+        );
+        min-height: 100vh;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Loading animation */
+      .loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top-color: #667eea;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading-text {
+        font-size: 18px;
+        color: #667eea;
+        font-weight: 600;
+      }
+    </style>
+
+    <!-- Preconnect to important origins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Loading fallback -->
+    <div id="root">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Modern Calculator...</div>
+      </div>
+    </div>
+
+    <!-- Main JavaScript -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Inline script to remove loading state -->
+    <script>
+      // Remove loading state when app is loaded
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadingElement = document.querySelector('.loading');
+        if (loadingElement) {
+          setTimeout(() => {
+            loadingElement.style.opacity = '0';
+            loadingElement.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => loadingElement.remove(), 300);
+          }, 500);
+        }
+      });
+    </script>
+
+    <!-- Analytics (optional) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
   </body>
 </html>

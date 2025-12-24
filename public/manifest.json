@@ -1,0 +1,59 @@
+{
+  "name": "Modern Calculator",
+  "short_name": "Calc",
+  "description": "Professional calculator app with memory functions, history tracking, and keyboard support",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2'><rect x='3' y='3' width='18' height='18' rx='2' ry='2'/><line x1='8' y1='7' x2='16' y2='7'/><line x1='8' y1='11' x2='10' y2='11'/><line x1='8' y1='15' x2='10' y2='15'/><line x1='12' y1='11' x2='14' y2='11'/><line x1='12' y1='15' x2='14' y2='15'/><line x1='16' y1='11' x2='16' y2='17'/><circle cx='18' cy='18' r='1'/><circle cx='6' cy='18' r='1'/></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVR4nO2Wv0vDQBTHPwVXVyfBSVwcXBRcHBwKCh06dCg4uIg4dHAQBAcHQUHwH4jg4FDoKjgUQXATiuvzSS70mkt7vcsVH+zH+3F3l9wv74cjxpgDfANP0vgDfOGO8w9xEkpVgE/gBXjFXQrv+Cdp2BQScAXsZ7x3DhQFYr8AW2UC2ALeO8A4WJNQPgPYb2n8w3tXe8l0BoqYNgQ0A0gDRgNAiGQngAeY1wAQIjkAjJEG0BzpBri9wQcYpBgwRr8j0QYYLgngJfYBx3OAaBdPgd7YA0i+hxPAEBuN1VwC18A8oF4pI34mHHAE9AAFRakjTgBTgB6gQV0iTgBTgH5oUJu4pYuwowfYjgvw6gL+cgG6wJ4tUEfJdAFWgGUgASjci60ALaDJwRc3W4E1Dn+cnAA9QIu6AqwBLXoPUAP0Z7nRA3W4ANPAZJkCfW5QJ7IEkEXF5w3Gyo7Dx8A0IYBZ4BH4dIC+Sg8wA7wBX0IIlwfYBF4cIJ5yA5gE9AFVxAc4FCI5AeiDVFPCvXgA3OknM/pcIQ14DiGUA0yUcC8eANf6T4IT/RQir7EQ7AJn+jNF0fdbQ+8k3YD3nwL5BLAJPOg37gIrvk6vB/AH6Ossp8rUMyEAAAAASUVORK5CYII=",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/png;base64,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",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "education"],
+  "shortcuts": [
+    {
+      "name": "New Calculation",
+      "short_name": "Calculate",
+      "description": "Start a new calculation",
+      "url": "/?new=true"
+    },
+    {
+      "name": "View History",
+      "short_name": "History",
+      "description": "View calculation history",
+      "url": "/?history=true"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://calculator-app.com/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "description": "Modern Calculator in action"
+    },
+    {
+      "src": "https://calculator-app.com/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "description": "Calculator with history panel open"
+    }
+  ]
+}
